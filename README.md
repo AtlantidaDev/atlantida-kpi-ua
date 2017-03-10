@@ -7,14 +7,14 @@
 3. За допомогою PIP завантажити модуль virtualenv
 
 - *Console command for Windows Machine*
-***
-    python -m pip install virtualenv
-***
+```commandline
+python -m pip install virtualenv
+```
 
 - *Console command for Linux/Mac*
-***
-    pip install virtualenv
-***
+```commandline
+pip install virtualenv
+```
 
 4. Зробити собі Форк репозиторія
 5. Зклонувати репозиторій на свій локальний комп'ютер
@@ -22,18 +22,18 @@
     і запустити наступні команди:
     
 - *Console command for Windows Machine*
-***
-    python -m virtualenv env
-    env\bin\activate.bat
-    python manage.py runserver
-***
+```commandline
+python -m virtualenv env
+env\bin\activate.bat
+python manage.py runserver
+```
 
 - *Console command for Linux/Mac*
-***
-    virtualenv env
-    source env/bin/activate
-    python manage.py runserver
-*** 
+```commandline
+virtualenv env
+source env/bin/activate
+python manage.py runserver
+```
 7. Тепер відкрийте браузер і перейдіть на сторінку
     [http://localhost:8000/](http://localhost:8000/).
     Якщо все зроблено правильно, ви маєте побачити сторінку index.html
