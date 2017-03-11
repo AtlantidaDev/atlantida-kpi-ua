@@ -2,8 +2,13 @@ from django.shortcuts import render
 
 
 def index(request):
-    pass
+    return render(request, 'blog/index.html')
 
 
 def articles(request, article_id):
-    pass
+    return render(request, 'blog/article.html', {
+        "article": {
+            "id": article_id,
+            "title": "Title"
+        }
+    })
