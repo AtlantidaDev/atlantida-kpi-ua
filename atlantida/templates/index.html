@@ -15,6 +15,11 @@
     <script src="{% static 'JS/main.js' %}"></script>
 
     <style>
+
+        /******************************************************/
+        /* BASE */
+        /******************************************************/
+
         body {
             font-family: 'Roboto Condensed', sans-serif;
             line-height: 1.4;
@@ -25,44 +30,10 @@
             background-size: cover;
         }
 
-        .row-menu {
-            display: flex;
-            height: 90px;
-            background: rgba(230, 230, 230, 0.2);
-            text-transform: uppercase;
-            white-space: nowrap;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            color: #fefefe;
-        }
-
-        .before-menu {
-            font-size: 29px;
-            font-weight: 400;
-        }
-
-        .top-menu {
-            display: flex;
-            justify-content: space-between;
-            flex-basis: 960px;
-            font-size: 24px;
-            font-weight: 700;
-        }
-
-        .after-menu {
-            font-size: 18px;
-            font-weight: 700;
-        }
-
-        .before-menu,
-        .after-menu,
-        .top-menu__item {
-            margin: auto 0;
-        }
-
         .row-content {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 20px;
         }
 
         .flex-box-center {
@@ -71,16 +42,58 @@
             align-items: center;
         }
 
-        .welcom-box {
+        /******************************************************/
+        /* TOP MENU */
+        /******************************************************/
+
+        .row-menu {
+            display: flex;
+            height: 90px;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: 700;
+            background-color: rgba(230, 230, 230, 0.2);
+            box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .top-menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-basis: 1200px;
+        }
+
+        .before-menu {
+            margin-right: 20px;
+            font-weight: 400;
+            font-size: 29px;
+        }
+
+        .after-menu {
+            margin-left: 20px;
+            font-size: 18px;
+        }
+
+        .top-menu__item {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /******************************************************/
+        /* WELCOME */
+        /******************************************************/
+
+        .welcome-box {
             height: 610px;
         }
 
         .welcome {
             color: white;
             display: flex;
-        }
-
-        .bordered {
             border: 3px solid white;
         }
 
@@ -91,7 +104,7 @@
         }
 
         .welcome__diver {
-            background: url({% static 'images/header_diver.png' %}) no-repeat center center;
+            background: url({% static 'images/header_diver.png' %}) no-repeat center;
             background-size: contain;
             flex-basis: 40%;
             margin-right: 60px;
@@ -144,13 +157,13 @@
         <!--Top menu-->
         <header class="row row-menu">
             <div class="before-menu">diveclub</div>
-                <ul class="top-menu">
-                    <li class="top-menu__item">О нас&nbsp;</li>
-                    <li class="top-menu__item">Фотогалерея&nbsp;</li>
-                    <li class="top-menu__item">Блог&nbsp;</li>
-                    <li class="top-menu__item">План тренировок&nbsp;</li>
-                    <li class="top-menu__item">Календарь событий&nbsp;</li>
-                </ul>
+            <nav class="top-menu">
+                <a href="#" class="top-menu__item">О нас&nbsp;</a>
+                <a href="#" class="top-menu__item">Фотогалерея&nbsp;</a>
+                <a href="#" class="top-menu__item">Блог&nbsp;</a>
+                <a href="#" class="top-menu__item">План тренировок&nbsp;</a>
+                <a href="#" class="top-menu__item">Календарь событий&nbsp;</a>
+            </nav>
             <div class="after-menu">
                 <span>укр</span>
                 <span>рус</span>
@@ -159,12 +172,13 @@
 
         <!-- Welcome -->
         <div class="row">
-            <div class="row-content flex-box-center welcom-box">
-                <div class="welcome bordered">
+            <div class="row-content flex-box-center welcome-box">
+                <div class="welcome">
                     <div class="welcome__text">
                         <h1 class="welcome__text__title">Атлантида</h1>
                         <h2 class="welcome__text__subtitle">клуб подводного плавания</h2>
-                        <p class="welcome__text__text">Если у человека появляется возможность вести необычную жизнь, он не имеет права от неё отказываться. © Жак-Ив Кусто</p>
+                        <p class="welcome__text__text">Если у человека появляется возможность вести необычную жизнь, он
+                            не имеет права от неё отказываться. © Жак-Ив Кусто</p>
                         <a class="welcome__text__button">Присоединийся к нам</a>
                     </div>
                     <div class="welcome__diver">
