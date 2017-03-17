@@ -15,11 +15,6 @@
     <script src="{% static 'JS/main.js' %}"></script>
 
     <style>
-
-        /******************************************************/
-        /* BASE */
-        /******************************************************/
-
         body {
             font-family: 'Roboto Condensed', sans-serif;
             line-height: 1.4;
@@ -28,6 +23,48 @@
         .header-bg {
             background: url({% static 'images/header_bg.png' %}) no-repeat center;
             background-size: cover;
+        }
+
+        /******************************************************/
+        /* TOP MENU */
+        /******************************************************/
+
+        .row-menu {
+            display: flex;
+            height: 90px;
+            background: rgba(203, 203, 203, 0.23);
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .top-menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-basis: 1200px;
+            padding: 0 20px;
+            text-transform: uppercase;
+            font-size: 24px;
+        }
+
+        .before-menu {
+            margin-right: 20px;
+            text-transform: uppercase;
+            font-size: 29px;
+        }
+
+        .after-menu {
+            margin-left: 20px;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+
+        .top-menu__item {
+            display: inline-block;
+            padding: auto 10px;
+            color: #fff;
+            text-decoration: none;
         }
 
         .row-content {
@@ -42,58 +79,16 @@
             align-items: center;
         }
 
-        /******************************************************/
-        /* TOP MENU */
-        /******************************************************/
-
-        .row-menu {
-            display: flex;
-            height: 90px;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-transform: uppercase;
-            font-size: 24px;
-            font-weight: 700;
-            background-color: rgba(230, 230, 230, 0.2);
-            box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
-        }
-
-        .top-menu {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-basis: 1200px;
-        }
-
-        .before-menu {
-            margin-right: 20px;
-            font-weight: 400;
-            font-size: 29px;
-        }
-
-        .after-menu {
-            margin-left: 20px;
-            font-size: 18px;
-        }
-
-        .top-menu__item {
-            display: inline-block;
-            color: #fff;
-            text-decoration: none;
-        }
-
-        /******************************************************/
-        /* WELCOME */
-        /******************************************************/
-
-        .welcome-box {
+        .welcom-box {
             height: 610px;
         }
 
         .welcome {
             color: white;
             display: flex;
+        }
+
+        .bordered {
             border: 3px solid white;
         }
 
@@ -172,8 +167,8 @@
 
         <!-- Welcome -->
         <div class="row">
-            <div class="row-content flex-box-center welcome-box">
-                <div class="welcome">
+            <div class="row-content flex-box-center welcom-box">
+                <div class="welcome bordered">
                     <div class="welcome__text">
                         <h1 class="welcome__text__title">Атлантида</h1>
                         <h2 class="welcome__text__subtitle">клуб подводного плавания</h2>
