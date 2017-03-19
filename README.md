@@ -77,23 +77,22 @@
 - *текст про нас*
 - *фото*
 
-Текст про нас свою чергу також ділиться на частини:
+Текст про нас у свою чергу також ділиться на частини:
 - *заголовок*
 - *опис*
 - *кнопка*
 
 Як це буде виглядати в html та css:
-```commandline
+```html
 <div class="about-us">
     <div class="about-us__text">
         <h1 class="about-us__text__title">About us</h1>
         <p class="about-us__text__description">Description text</p>
         <a class="button about-us__text__button" href="#">Read more</a>
     </div>
-</div>
     <div class="about-us__photos">
-        <img class="about-us__photos__1">
-        <img class="about-us__photos__1">
+        <img class="about-us__photos__img_0">
+        <img class="about-us__photos__img_1">
     </div>
 </div>
 ```
