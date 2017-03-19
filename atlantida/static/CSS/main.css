@@ -1,3 +1,7 @@
+/******************************************************/
+/* GENERAL */
+/******************************************************/
+
 body {
     font-family: 'PT Sans', sans-serif;
     line-height: 1.4;
@@ -6,6 +10,42 @@ body {
 .header-bg {
     background: url('../images/header_bg.png') no-repeat center;
     background-size: cover;
+}
+
+.section-title {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #2c2e37;
+}
+
+.button {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    background: #36aeea;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4.5px;
+    letter-spacing: 2px;
+}
+
+.button:hover {
+    background: #5475d0;
+}
+
+.button-normal {
+    font-size: 15px;
+    padding: 15px 6px;
+}
+
+.button-large {
+    font-size: 18px;
+    box-shadow: 0 0 35px 0 rgba(3, 3, 3, 0.06);
+    padding: 20px 16px;
 }
 
 /******************************************************/
@@ -115,18 +155,59 @@ body {
 }
 
 .welcome__text__button {
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 700;
-    background: #36aeea;
-    box-shadow: 0 0 35px 0 rgba(3, 3, 3, 0.06);
-    border-radius: 3px;
-    padding: 20px 16px;
-    display: inline-block;
     margin-top: 20px;
-    letter-spacing: 2px;
 }
 
-.welcome__text__button:hover {
-    background: #5475d0;
+/******************************************************/
+/* ABOUT US */
+/******************************************************/
+
+.about-bg {
+    background: #f6f4f4;
+}
+
+.about-box {
+    min-height: 670px;
+    background: url('../images/about_bg.png') no-repeat;
+    background-position: 144px 74px;
+    position: relative;
+}
+
+.about__text {
+    overflow: hidden;
+    max-width: 405px;
+    float: left;
+    position: relative;
+    top: 255px;
+    margin-right: 50px;
+}
+
+.about__text__description {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: normal;
+    color: #919191;
+}
+
+.about__text__button {
+    margin-top: 25px;
+}
+
+.about__photos {
+    float: left;
+    position: relative;
+}
+
+.about__photos__img {
+    position: absolute;
+}
+
+.about__photos__img_0 {
+    top: -30px;
+    left: 90px;
+}
+
+.about__photos__img_1 {
+    top: 280px;
 }
