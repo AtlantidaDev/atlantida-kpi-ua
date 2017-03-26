@@ -12,7 +12,9 @@
 
     <link rel="stylesheet" type="text/css" href="{% static 'CSS/reset.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'CSS/main.css' %}">
-    <script src="{% static 'JS/main.js' %}"></script>
+
+    <link rel="stylesheet" href="{% static 'CSS/justifiedGallery.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'CSS/colorbox.css' %}" />
 
 </head>
 <body>
@@ -70,6 +72,42 @@
         </div>
     </div>
 
+    <!-- Photo gallery -->
+    <div class="photo-gallery-bg">
+        <div class="row">
+            <div class="row-content photo-gallery-box">
+                <h1 class="section-title photo-gallery__title">Фотогалерея</h1>
+                <div class="photo-gallery__photos">
+                    <a class="photo-gallery__photos__item" href="{% static 'images/photo_gallery_1.jpg' %}">
+                        <img src="{% static 'images/photo_gallery_1.jpg' %}">
+                    </a>
+                    <a class="photo-gallery__photos__item" href="{% static 'images/photo_gallery_2.jpg' %}">
+                        <img src="{% static 'images/photo_gallery_2.jpg' %}">
+                    </a>
+                    <a class="photo-gallery__photos__item" href="{% static 'images/photo_gallery_3.jpg' %}">
+                        <img src="{% static 'images/photo_gallery_3.jpg' %}">
+                    </a>
+                    <a class="photo-gallery__photos__item" href="{% static 'images/photo_gallery_4.jpg' %}">
+                        <img src="{% static 'images/photo_gallery_4.jpg' %}">
+                    </a>
+                    <a class="photo-gallery__photos__item" href="{% static 'images/photo_gallery_5.jpg' %}">
+                        <img src="{% static 'images/photo_gallery_5.jpg' %}">
+                    </a>
+                    <a class="photo-gallery__photos__item" href="{% static 'images/photo_gallery_6.jpg' %}">
+                        <img src="{% static 'images/photo_gallery_6.jpg' %}">
+                    </a>
+                </div>
+                <a class="button button-normal photo-gallery__button">Больше фото</a>
+            </div>
+        </div>
+    </div>
+
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+<script src="{% static 'JS/jquery.justifiedGallery.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'JS/jquery.colorbox-min.js' %}" type="text/javascript"></script>
+<script src="{% static 'JS/main.js' %}" type="text/javascript"></script>
+
 </body>
 </html>
