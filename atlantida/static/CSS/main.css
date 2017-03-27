@@ -54,7 +54,7 @@ body {
 
 .row-menu {
     display: flex;
-    height: 90px;
+    min-height: 90px;
     background: rgba(203, 203, 203, 0.23);
     justify-content: center;
     align-items: center;
@@ -63,6 +63,7 @@ body {
 
 .top-menu {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-basis: 1200px;
@@ -70,9 +71,23 @@ body {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 700;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 680px) {
+    .top-menu {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .top-menu {
+        flex-direction: column;
+    }
 }
 
 .before-menu {
+    margin-left: 20px;
     margin-right: 20px;
     text-transform: uppercase;
     font-size: 29px;
@@ -81,9 +96,15 @@ body {
 
 .after-menu {
     margin-left: 20px;
+    margin-right: 20px;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 400;
+}
+
+.after-menu__item {
+    color: white;
+    text-decoration: none;
 }
 
 .top-menu__item {
@@ -91,6 +112,7 @@ body {
     padding: auto 10px;
     color: #fff;
     text-decoration: none;
+    margin-top: 15px;
 }
 
 .row-content {
@@ -106,7 +128,7 @@ body {
 }
 
 .welcome-box {
-    height: 610px;
+    min-height: 610px;
 }
 
 .welcome {
