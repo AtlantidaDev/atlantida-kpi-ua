@@ -74,12 +74,6 @@ body {
     margin-bottom: 15px;
 }
 
-@media screen and (max-width: 680px) {
-    .top-menu {
-        flex-direction: column;
-    }
-}
-
 @media screen and (max-width: 1024px) {
     .top-menu {
         flex-direction: column;
@@ -221,13 +215,14 @@ body {
     position: relative;
 }
 
-@media screen and (max-width: 680px) {
-    .about__photos {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 1024px) {
+
+    .about__text {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+
     .about__photos {
         display: none;
     }
