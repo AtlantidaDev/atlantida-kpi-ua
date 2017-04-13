@@ -25,7 +25,8 @@ SECRET_KEY = 'm$8u!dqa=m6qkyy-7fb402d20ahrl*zc_bfyho-(+a^ascbmee'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.99.100',
+                 u'localhost']
 
 
 # Application definition
@@ -76,6 +77,15 @@ WSGI_APPLICATION = 'atlantida.wsgi.application'
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'atlantida',
+        'USER': 'atlantidauser',
+        'HOST': 'db',
+        'PORT': 5432,
+
+    },
+
+    'local': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
@@ -119,6 +129,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = '/static'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "atlantida", "static"),

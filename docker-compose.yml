@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+  nginx:
+    restart: always
+    image: nginx:latest
+    container_name: atlantida-nginx
+    ports:
+      - "8000:8000"
+    volumes:
+      - "./src:/src"
+      - "./config/nginx:/etc/nginx/conf.d"
+      - "./src/atlantida/static:/static"
+    depends_on:
+      - web
+    networks:
+      - atlantida-kpi-ua-network
+
+  web:
+    restart: always
+    build: .
+    container_name: atlantida-web
+    command: bash -c "python manage.py makemigrations && python manage.py migrate && gunicorn atlantida.wsgi -b 0.0.0.0:8000"
+    depends_on:
+      - db
+    volumes:
+      - "./src:/src"
+      - "./src/atlantida/static:/static"
+    expose:
+      - "8000"
+    environment:
+      - PYTHONPATH=/src
+    networks:
+      - atlantida-kpi-ua-network
+
+  db:
+    restart: always
+    image: postgres:latest
+    container_name: atlantida-postgres
+    environment:
+    - POSTGRES_DB=atlantida
+    - POSTGRES_USER=atlantidauser
+    networks:
+      - atlantida-kpi-ua-network
+
+networks:
+  atlantida-kpi-ua-network:
+    driver: bridge

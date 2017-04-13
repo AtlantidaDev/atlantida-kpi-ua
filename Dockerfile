@@ -1,19 +1,14 @@
-FROM ubuntu:16.04
+FROM python:2.7
 
-MAINTAINER Oleksandr Pikovets
+MAINTAINER Oleksandr Pikovets <pikovets.alexandr@gmail.com>
 
-ENV PORT=3000
+ENV PYTHONUNBUFFERED 1
 
-COPY . /var/www
-WORKDIR /var/www
+VOLUME ./src:/src
 
-RUN apt-get upgrade && apt-get update && apt-get install -y \
-    python \
-    python-pip
+RUN mkdir /config
+ADD /config/requirements.pip /config/
 
-RUN pip install --upgrade pip
-RUN pip install -r requirements.pip
+RUN pip install -r /config/requirements.pip
 
-EXPOSE $PORT
-
-ENTRYPOINT ["python", "mannage.py", "runserver", "$PORT"]
+WORKDIR /src
