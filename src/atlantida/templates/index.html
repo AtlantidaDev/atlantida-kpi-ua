@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atlantida Dive Club</title>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/main.css' %}">
+    <script src="{% static 'JS/main.js' %}"></script>
+
+</head>
+<body>
+<div class="site-wrap">
+    <div class="header-bg">
+        <!--Top menu-->
+        <header class="row row-menu">
+            <div class="before-menu">diveclub</div>
+            <nav class="top-menu">
+                <a href="#" class="top-menu__item">О нас&nbsp;</a>
+                <a href="#" class="top-menu__item">Фотогалерея&nbsp;</a>
+                <a href="#" class="top-menu__item">Блог&nbsp;</a>
+                <a href="#" class="top-menu__item">План тренировок&nbsp;</a>
+                <a href="#" class="top-menu__item">Календарь событий&nbsp;</a>
+            </nav>
+            <div class="after-menu">
+                <span>укр</span>
+                <span>рус</span>
+            </div>
+        </header>
+
+        <!-- Welcome -->
+        <div class="row">
+            <div class="row-content flex-box-center welcome-box">
+                <div class="welcome bordered">
+                    <div class="welcome__text">
+                        <h1 class="welcome__text__title">Атлантида</h1>
+                        <h2 class="welcome__text__subtitle">клуб подводного плавания</h2>
+                        <p class="welcome__text__text">Если у человека появляется возможность вести необычную жизнь, он
+                            не имеет права от неё отказываться. © Жак-Ив Кусто</p>
+                        <a class="button button-large welcome__text__button">Присоединийся к нам</a>
+                    </div>
+                    <div class="welcome__diver">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About us-->
+    <div class="about-bg">
+        <div class="row">
+            <div class="row-content about-box">
+                <div class="about__text">
+                    <h1 class="section-title">О нас</h1>
+                    <p class="about__text__description">Клуб уникален и ему нет аналогов в Украине в сочетании бесплатного обучения, и высокого уровня
+                        подготовки подводных пловцов.</p>
+                    <a class="button button-normal welcome__text__button" href="#">Читать дальше</a>
+                </div>
+                <div class="about__photos">
+                    <img class="about__photos__img about__photos__img_0" src="{% static 'images/about_0.jpg' %}">
+                    <img class="about__photos__img about__photos__img_1" src="{% static 'images/about_1.jpg' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
