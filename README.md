@@ -65,36 +65,3 @@
 7. Тепер відкрийте браузер і перейдіть на сторінку
     [http://localhost:8000/](http://localhost:8000/).
     Якщо все зроблено правильно, ви маєте побачити сторінку index.html
-
-
-## Frontend code style
-
-Для фронтенду ми використовуємом методологію БЕМ(Блок Елемент Модифікатор)
-
-Приклад:
-
-Ми створюємо блок "Про нас" який ділиться на дві частини:
-- *текст про нас*
-- *фото*
-
-Текст про нас у свою чергу також ділиться на частини:
-- *заголовок*
-- *опис*
-- *кнопка*
-
-Як це буде виглядати в html та css:
-```html
-<div class="about-us">
-    <div class="about-us__text">
-        <h1 class="about-us__text__title">About us</h1>
-        <p class="about-us__text__description">Description text</p>
-        <a class="button about-us__text__button" href="#">Read more</a>
-    </div>
-    <div class="about-us__photos">
-        <img class="about-us__photos__img_0">
-        <img class="about-us__photos__img_1">
-    </div>
-</div>
-```
-
-[See](https://ru.bem.info/methodology/key-concepts/)
