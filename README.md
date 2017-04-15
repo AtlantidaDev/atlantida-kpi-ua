@@ -44,8 +44,7 @@
 	[Fork A Repo](https://help.github.com/articles/fork-a-repo/)
 	[Syncing a fork](https://help.github.com/articles/syncing-a-fork/)
 
-6. З консолі перейти в папку, куди ви зклонували репозиторій
-    і запустити наступні команди:
+6. З консолі перейти в папку проекту src і запустити наступні команди:
     
     - *Console command for Windows Machine*
     ```commandline
@@ -66,6 +65,29 @@
     [http://localhost:8000/](http://localhost:8000/).
     Якщо все зроблено правильно, ви маєте побачити сторінку index.html
 
+## Запуск в Docker
+
+1. Встановити докер [клієнт](https://www.docker.com/community-edition):
+
+2. Перейти в директорію проекту і запустити:
+    
+    ```commandline
+    docker-compose up
+    ```
+    
+    Це запустить всі необхідні контейнери для роботи сайту.
+    
+3. Тепер відкрийте браузер і перейдіть на сторінку
+    [http://localhost:8000/](http://localhost:8000/).
+    Якщо все зроблено правильно, ви маєте побачити сторінку index.html
+    
+    Щоб побачити ефект від зміни бек енд коду потрібно перезапустити сайт:
+    
+     ```commandline
+    docker-compose restart
+    ```
+    
+    Для фронтенду достатньо перезавантажити сторінку в браузері.
 
 ## Frontend code style
 
