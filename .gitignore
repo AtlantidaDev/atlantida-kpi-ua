@@ -93,3 +93,6 @@ ENV/
 
 #sql light
 *.sqlite3
+
+#collected admin static files
+src/atlantida/static/admin/

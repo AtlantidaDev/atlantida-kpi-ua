@@ -6,7 +6,7 @@
    
    Для Windows:
    - *Додати enviroment variable*
-   ```commandline
+   ```
     This PC -> Properties -> Advanced system settings -> Advanced
 	-> (Button) Enviroment Variables... -> System variables 
 	-> (Double click) Path -> New -> Insert your path to python
