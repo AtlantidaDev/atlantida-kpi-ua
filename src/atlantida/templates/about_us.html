@@ -1,14 +1,12 @@
+{% extends "base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Atlantida Dive Club</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'CSS/main.css' %}">
-</head>
-<body>
-    <div>
-        <p>About Us</p>
+
+{% block content %}
+<div class="site-wrap">
+    <div class="header-bg">
+        <!--Top menu-->
+        {% include 'top-menu.html' %}
     </div>
-</body>
-</html>
+</div>
+
+{% endblock content %}

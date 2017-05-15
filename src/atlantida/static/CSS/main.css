@@ -8,7 +8,7 @@ body {
 }
 
 .header-bg {
-    background: url('../images/header_bg.png') no-repeat center;
+    background: url('../images/header_bg.png') no-repeat top;
     background-size: cover;
 }
 
@@ -86,6 +86,12 @@ body {
     text-transform: uppercase;
     font-size: 29px;
     font-weight: 400;
+}
+
+.before-menu__item {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
 }
 
 .after-menu {
