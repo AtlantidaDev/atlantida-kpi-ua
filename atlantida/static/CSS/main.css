@@ -30,8 +30,9 @@ body {
     background: #36aeea;
     text-decoration: none;
     display: inline-block;
-    border-radius: 4.5px;
+    border-radius: 5px;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .button:hover {
@@ -114,7 +115,7 @@ body {
 .welcome__article {
     align-self: center;
     /*flex-basis: 60%;*/
-    margin: 60px 20px 20px 90px;
+    margin: 0 20px 20px 90px;
 }
 
 .welcome__diver {
