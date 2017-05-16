@@ -130,7 +130,7 @@ body {
     border: 3px solid white;
 }
 
-.welcome__text {
+.welcome__article {
     align-self: center;
     flex-basis: 60%;
     margin: 60px 20px 20px 90px;
@@ -143,30 +143,30 @@ body {
     margin-right: 60px;
 }
 
-.welcome__text__title,
-.welcome__text__subtitle {
+.welcome__article-title,
+.welcome__article-subtitle {
     text-transform: uppercase;
     font-weight: 700;
     line-height: normal;
 }
 
-.welcome__text__title {
+.welcome__article-title {
     font-size: 60px;
     letter-spacing: 8px;
 }
 
-.welcome__text__subtitle {
+.welcome__article-subtitle {
     font-size: 24px;
     letter-spacing: 2px;
 }
 
-.welcome__text__text {
+.welcome__article-text {
     font-size: 20px;
     font-weight: 400;
     margin-top: 25px;
 }
 
-.welcome__text__button {
+.welcome__article-button {
     margin-top: 20px;
 }
 
@@ -185,7 +185,7 @@ body {
     position: relative;
 }
 
-.about__text {
+.about__article {
     overflow: hidden;
     max-width: 405px;
     float: left;
@@ -194,7 +194,7 @@ body {
     margin-right: 50px;
 }
 
-.about__text__description {
+.about__article-description {
     margin-top: 20px;
     font-weight: 400;
     font-size: 24px;
@@ -202,7 +202,7 @@ body {
     color: #919191;
 }
 
-.about__text__button {
+.about__article-button {
     margin-top: 25px;
 }
 
@@ -212,16 +212,16 @@ body {
 }
 
 
-.about__photos__img {
+.about__photos-img {
     position: absolute;
 }
 
-.about__photos__img_0 {
+.about__photos-img_0 {
     top: -30px;
     left: 90px;
 }
 
-.about__photos__img_1 {
+.about__photos-img_1 {
     top: 280px;
 }
 
