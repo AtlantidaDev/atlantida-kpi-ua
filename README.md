@@ -95,21 +95,23 @@
 
 пример:
 
-Блоки:
+### Блоки:
 - "Про нас" - about-us
 
-Элементы
+### Элементы
 - "Статья про нас"			  about-us__article
 - "Заголовок статьи про нас"		  about-us__article-title
 - "Содержание статьи про нас"		  about-us__article-description
 - "Кнопка для статьи про нас" 		  about-us__article-button
 
-Модификаторы 
+### Модификаторы 
+
 Стиль для кнопки можно создать как независимый от блока "about-us", а сделать модификатор для блока "button"
-- "Кнопка для статьи про нас" 		 - button_about-us
+- "Кнопка для статьи про нас" button_about-us
+
 Определение перечня классов во стором случае выглядит гармоничнее чем в первом
-class="button about-us__article-button" 
-class="button button_about-us"
+- class="button about-us__article-button" 
+- class="button button_about-us"
 	
 Как это будет выглядеть в html и css:
 ```html
@@ -126,6 +128,8 @@ class="button button_about-us"
     </div>
 </div>
 ```
-!!!ВАЖНО!!! Вложенность элеметнов в методологии БЭМ запрещена!
+### !!!ВАЖНО!!! Вложенность элеметнов в элементы в методологии БЭМ запрещена!
 about-us__article__button - подобных классов быть не должно
+
+
 [See](https://ru.bem.info/methodology/key-concepts/)
