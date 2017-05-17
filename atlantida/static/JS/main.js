@@ -8,8 +8,8 @@ $(document).ready(function () {
         margins : 35
     });
 
-    $("a.photo-gallery__photos__item").colorbox({
-        rel:'photo-gallery__photos__item',
+    $("a.photo-gallery__photos-item").colorbox({
+        rel:'photo-gallery__photos-item',
         slideshow:true
     })
 

@@ -1,0 +1,38 @@
+/******************************************************/
+/* Laptops */
+/******************************************************/
+
+@media screen and (max-width: 1024px) {
+    .top-menu {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .about__text {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .about__photos {
+        display: none;
+    }
+}
+
+/******************************************************/
+/* Tablets */
+/******************************************************/
+
+@media screen and (max-width: 768px) {
+    .welcome__text {
+        text-align: center;
+        flex-basis: 100%;
+        margin: 20px;
+    }
+
+    .welcome__diver {
+        display: none;
+    }
+}
