@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="site-wrap">
+    <div class="header-bg">
+        <!--Top menu-->
+        {% include 'top-menu.html' %}
+
+        <!-- Welcome -->
+        <div class="row">
+            <div class="row-content flex-box-center welcome-box">
+                <div class="welcome bordered">
+                    <div class="welcome__text">
+                        <h1 class="welcome__text__title">Атлантида</h1>
+                        <h2 class="welcome__text__subtitle">клуб подводного плавания</h2>
+                        <p class="welcome__text__text">Если у человека появляется возможность вести необычную жизнь, он
+                            не имеет права от неё отказываться. © Жак-Ив Кусто</p>
+                        <a class="button button-large welcome__text__button" href="#">Присоединийся к нам</a>
+                    </div>
+                    <div class="welcome__diver">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About us-->
+    <div class="about-bg">
+        <div class="row">
+            <div class="row-content about-box">
+                <div class="about__text">
+                    <h1 class="section-title">О нас</h1>
+                    <p class="about__text__description">Клуб уникален и ему нет аналогов в Украине в сочетании бесплатного обучения, и высокого уровня
+                        подготовки подводных пловцов.</p>
+                    <a class="button button-normal welcome__text__button" href="{% url 'about_us' %}">Читать дальше</a>
+                </div>
+                <div class="about__photos">
+                    <img class="about__photos__img about__photos__img_0" src="{% static 'images/about_0.jpg' %}">
+                    <img class="about__photos__img about__photos__img_1" src="{% static 'images/about_1.jpg' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photo gallery -->
+    <div class="photo-gallery-bg">
+        <div class="row">
+            <div class="row-content photo-gallery-box">
+                <h1 class="section-title photo-gallery__title">Фотогалерея</h1>
+                <div class="photo-gallery__photos">
+                    <a class="photo-gallery__photos__item" href="{% static 'images/photo_gallery_1.jpg' %}">
+                        <img src="{% static 'images/photo_gallery_1.jpg' %}">
+                    </a>
+                    <a class="photo-gallery__photos__item" href="{% static 'images/photo_gallery_2.jpg' %}">
+                        <img src="{% static 'images/photo_gallery_2.jpg' %}">
+                    </a>
+                    <a class="photo-gallery__photos__item" href="{% static 'images/photo_gallery_3.jpg' %}">
+                        <img src="{% static 'images/photo_gallery_3.jpg' %}">
+                    </a>
+                    <a class="photo-gallery__photos__item" href="{% static 'images/photo_gallery_4.jpg' %}">
+                        <img src="{% static 'images/photo_gallery_4.jpg' %}">
+                    </a>
+                    <a class="photo-gallery__photos__item" href="{% static 'images/photo_gallery_5.jpg' %}">
+                        <img src="{% static 'images/photo_gallery_5.jpg' %}">
+                    </a>
+                    <a class="photo-gallery__photos__item" href="{% static 'images/photo_gallery_6.jpg' %}">
+                        <img src="{% static 'images/photo_gallery_6.jpg' %}">
+                    </a>
+                </div>
+                <a class="button button-normal photo-gallery__button" href="#">Больше фото</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+<script src="{% static 'JS/jquery.justifiedGallery.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'JS/jquery.colorbox-min.js' %}" type="text/javascript"></script>
+<script src="{% static 'JS/main.js' %}" type="text/javascript"></script>
+
+{% endblock content %}
