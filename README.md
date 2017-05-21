@@ -91,32 +91,45 @@
 
 ## Frontend code style
 
-Для фронтенду ми використовуємом методологію БЕМ(Блок Елемент Модифікатор)
+Для фронтенда мы используемого методологию БЭМ (Блок Элемент Модификатор)
 
-Приклад:
+пример:
 
-Ми створюємо блок "Про нас" який ділиться на дві частини:
-- *текст про нас*
-- *фото*
+### Блоки:
+- "Про нас" - about-us
 
-Текст про нас у свою чергу також ділиться на частини:
-- *заголовок*
-- *опис*
-- *кнопка*
+### Элементы
+- "Статья про нас"			  about-us__article
+- "Заголовок статьи про нас"		  about-us__article-title
+- "Содержание статьи про нас"		  about-us__article-description
+- "Кнопка для статьи про нас" 		  about-us__article-button
 
-Як це буде виглядати в html та css:
+### Модификаторы 
+
+Стиль для кнопки можно создать как независимый от блока "about-us", а сделать модификатор для блока "button"
+- "Кнопка для статьи про нас" button_about-us
+
+Определение перечня классов во стором случае выглядит гармоничнее чем в первом
+- class="button about-us__article-button" 
+- class="button button_about-us"
+	
+Как это будет выглядеть в html и css:
 ```html
 <div class="about-us">
-    <div class="about-us__text">
-        <h1 class="about-us__text__title">About us</h1>
-        <p class="about-us__text__description">Description text</p>
-        <a class="button about-us__text__button" href="#">Read more</a>
+    <div class="about-us__article">
+        <h1 class="about-us__article-title">About us</h1>
+        <p class="about-us__article-description">Description text</p>
+        <a class="button about-us__article-button" href="#">Read more</a>
+	<a class="button button_about-us" href="#">Read more</a>
     </div>
     <div class="about-us__photos">
-        <img class="about-us__photos__img_0">
-        <img class="about-us__photos__img_1">
+        <img class="about-us__photos-img_0">
+        <img class="about-us__photos-img_1">
     </div>
 </div>
 ```
+### !!!ВАЖНО!!! Вложенность элеметнов в элементы в методологии БЭМ запрещена!
+about-us__article__button - подобных классов быть не должно
+
 
 [See](https://ru.bem.info/methodology/key-concepts/)
