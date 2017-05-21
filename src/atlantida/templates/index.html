@@ -8,7 +8,7 @@
     <header class="jumbotron header-bg">
         <!--Top menu-->
 
-        {% include "top_menu.html" %}
+        {% include 'top_menu.html' %}
 
         <!-- Welcome -->
         <div class="container">
@@ -72,7 +72,7 @@
                         <h1 class="section-title">О нас</h1>
                         <p class="about__article-description">Клуб уникален и ему нет аналогов в Украине в сочетании бесплатного обучения, и высокого уровня
                             подготовки подводных пловцов.</p>
-                        <a class="button button-normal welcome__article-button" href="#">Читать дальше</a>
+                        <a class="button button-normal welcome__article-button" href="{% url 'about_us' %}">Читать дальше</a>
                     </div>
                     <div class="col-md-8 about__photos">
                         <img class="about__photos-img about__photos-img_0" src="{% static 'images/about_0.jpg' %}">
