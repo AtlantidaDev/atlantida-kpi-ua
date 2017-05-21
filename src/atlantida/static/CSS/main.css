@@ -8,7 +8,7 @@ body {
 }
 
 .header-bg {
-    background: url('../images/header_bg.png') no-repeat top;
+    background: url('../images/header_bg.png') no-repeat center;
     background-size: cover;
     margin-bottom: 0;
 }
@@ -64,24 +64,11 @@ body {
 /* TOP MENU */
 /******************************************************/
 
-<<<<<<< HEAD:atlantida/static/CSS/main.css
-=======
-.row-menu {
-    display: flex;
-    min-height: 90px;
-    background: rgba(203, 203, 203, 0.23);
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
-
->>>>>>> docker:src/atlantida/static/CSS/main.css
 .top-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     text-transform: uppercase;
-<<<<<<< HEAD:atlantida/static/CSS/main.css
 
 }
 .top-menu_background-main {
@@ -89,54 +76,12 @@ body {
 }
 .top-menu_background-dark {
     background: rgba(0, 0, 0, 0.7)
-=======
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-
-@media screen and (max-width: 1024px) {
-    .top-menu {
-        flex-direction: column;
-    }
-}
-
-.before-menu {
-    margin-left: 20px;
-    margin-right: 20px;
-    text-transform: uppercase;
-    font-size: 29px;
-    font-weight: 400;
-}
-
-.before-menu__item {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-}
-
-.after-menu {
-    margin-left: 20px;
-    margin-right: 20px;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 400;
->>>>>>> docker:src/atlantida/static/CSS/main.css
-}
-
-.after-menu__item {
-    color: white;
-    text-decoration: none;
 }
 
 .top-menu__item {
     color: #fff;
     text-decoration: none;
-<<<<<<< HEAD:atlantida/static/CSS/main.css
     font-size: 20px;
-=======
-    margin-top: 15px;
->>>>>>> docker:src/atlantida/static/CSS/main.css
 }
 
 
@@ -171,18 +116,6 @@ body {
     align-self: center;
     /*flex-basis: 60%;*/
     margin: 0 20px 20px 90px;
-}
-
-@media screen and (max-width: 768px) {
-    .welcome__text {
-        text-align: center;
-        flex-basis: 100%;
-        margin: 20px;
-    }
-
-    .welcome__diver {
-        display: none;
-    }
 }
 
 .welcome__diver {
@@ -258,25 +191,6 @@ body {
     position: relative;
 }
 
-<<<<<<< HEAD:atlantida/static/CSS/main.css
-=======
-@media screen and (max-width: 1024px) {
-
-    .about__text {
-        float: none;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .about__photos {
-        display: none;
-    }
-}
-
-.about__photos__img {
-    position: absolute;
-}
->>>>>>> docker:src/atlantida/static/CSS/main.css
 
 /*.about__photos-img {*/
     /*position: absolute;*/
@@ -292,36 +206,6 @@ body {
 .about__photos-img_1 {
     top: 280px;
     position: absolute;
-}
-
-/******************************************************/
-/* PHOTO GALLERY */
-/******************************************************/
-
-.photo-gallery-bg {
-    background: #ffffff;
-}
-
-.photo-gallery-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 800px;
-}
-
-.photo-gallery__title {
-    padding-top: 90px;
-    margin: auto;
-}
-
-.photo-gallery__photos {
-    margin-top: 85px;
-}
-
-.photo-gallery__button {
-    margin-top: 80px;
-    margin-bottom: 80px;
 }
 
 /******************************************************/
