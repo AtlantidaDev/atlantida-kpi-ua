@@ -2,7 +2,7 @@
 
 ## Запуск локально
 
-1. Встановити [Python 2.7](https://www.python.org/downloads/)
+1. Встановити [Python 3.6](https://www.python.org/downloads/)
    
    Для Windows:
    - *Додати enviroment variable*
@@ -19,12 +19,12 @@
 
     - *Console command for Windows Machine*
     ```commandline
-    python -m pip install virtualenv
+    python3 -m pip install virtualenv
     ```
     
     - *Console command for Linux/Mac*
     ```commandline
-    pip install virtualenv
+    python3 -m pip install virtualenv
     ```
 
 4. Зробити собі Форк репозиторія
@@ -49,15 +49,15 @@
     
     - *Console command for Windows Machine*
     ```commandline
-    python -m virtualenv env
+    python3 -m virtualenv env
     env\Scripts\activate.bat
-    python -m pip install -r requirements-local.pip
+    pip install -r requirements-local.pip
     python manage.py runserver
     ```
 
     - *Console command for Linux/Mac*
     ```commandline
-    virtualenv env
+    python3 -m virtualenv env
     source env/bin/activate
     pip install -r requirements-local.pip
     python manage.py runserver
