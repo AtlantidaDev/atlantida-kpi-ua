@@ -92,9 +92,6 @@ ENV/
 .idea
 
 #sql light
-<<<<<<< HEAD
-*.sqlite3
-=======
 *.sqlite3
 
 #collected admin static files
@@ -102,4 +99,3 @@ src/atlantida/static/admin/
 
 #mac specific
 .Ds_store
->>>>>>> docker

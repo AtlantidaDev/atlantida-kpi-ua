@@ -1,6 +1,6 @@
 from django.conf.urls import url
 
-from views import index, articles
+from .views import index, articles
 
 
 urlpatterns = [

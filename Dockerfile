@@ -1,19 +1,11 @@
-FROM ubuntu:16.04
+FROM python:latest
 
-MAINTAINER Oleksandr Pikovets
-
-ENV PORT=3000
+LABEL maintainer="Oleksandr Pikovets <pikovets.alexandr@gmail.com>"
 
 COPY . /var/www
 WORKDIR /var/www
 
-RUN apt-get upgrade && apt-get update && apt-get install -y \
-    python \
-    python-pip
-
 RUN pip install --upgrade pip
-RUN pip install -r requirements.pip
+RUN pip install -r config/requirements.txt
 
-EXPOSE $PORT
-
-ENTRYPOINT ["python", "mannage.py", "runserver", "$PORT"]
+WORKDIR ./src
